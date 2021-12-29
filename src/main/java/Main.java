@@ -1,4 +1,5 @@
 import Model.Vanzare;
+import Repository.SalaRepo;
 import Repository.SpectacolRepo;
 import Repository.VanzareRepo;
 
@@ -14,6 +15,9 @@ public class Main {
 
         VanzareRepo vanzareRepo=new VanzareRepo();
         vanzareRepo.getVanzari().forEach(e-> System.out.println(e.toString()));
+
+        SalaRepo salaRepo=new SalaRepo();
+        salaRepo.getSala().forEach(e-> System.out.println(e.toString()));
 
     }
 }

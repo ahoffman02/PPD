@@ -4,13 +4,15 @@ import java.util.List;
 
 public class Vanzare {
     private Integer id_spectacol;
+    private Integer id_vanzare;
     private String data_vanzare;
     private Integer nr_bilete_vandute;
     private List<Integer> lista_locuri_vandute;
     private Double suma;
 
-    public Vanzare(Integer id_spectacol, String data_vanzare, Integer nr_bilete_vandute, List<Integer> lista_locuri_vandute, Double suma) {
+    public Vanzare(Integer id_spectacol,Integer id_vanzare, String data_vanzare, Integer nr_bilete_vandute, List<Integer> lista_locuri_vandute, Double suma) {
         this.id_spectacol = id_spectacol;
+        this.id_vanzare = id_vanzare;
         this.data_vanzare = data_vanzare;
         this.nr_bilete_vandute = nr_bilete_vandute;
         this.lista_locuri_vandute = lista_locuri_vandute;

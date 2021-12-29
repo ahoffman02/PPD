@@ -20,12 +20,12 @@ public class VanzareRepo {
             while ((line = br.readLine()) != null) {
                 List<String> splitted_line= List.of(line.split(" "));
                 List<Integer> sold_list=new ArrayList<>();
-                for(String s:List.of(splitted_line.get(3).split(","))){
+                for(String s:List.of(splitted_line.get(4).split(","))){
                     sold_list.add(Integer.parseInt(s));
                 }
 
-                Vanzare vanzare=new Vanzare(Integer.parseInt(splitted_line.get(0)),splitted_line.get(1),Integer.parseInt(splitted_line.get(2)),
-                        sold_list,Double.parseDouble(splitted_line.get(4)));
+                Vanzare vanzare=new Vanzare(Integer.parseInt(splitted_line.get(0)), Integer.parseInt(splitted_line.get(1)),splitted_line.get(2),Integer.parseInt(splitted_line.get(3)),
+                        sold_list,Double.parseDouble(splitted_line.get(5)));
                 list.add(vanzare);
             }
         } catch (FileNotFoundException e) {
